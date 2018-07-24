@@ -1,6 +1,6 @@
 {
   "author": "Lloyd Hilaiel <lloyd@hilaiel.com> (http://lloyd.io)",
-  "name": "convict",
+  "name": "@montzkie18/convict",
   "description": "Featureful configuration management library for Node.js (nested structure, schema validation, etc.)",
   "keywords": [
     "configuration",
@@ -22,6 +22,7 @@
     "node": ">=4"
   },
   "scripts": {
+    "build": "babel lib --out-dir build",
     "test": "mocha --check-leaks -R spec test/*-tests.js",
     "posttest": "npm run lint",
     "pretest:coverage": "rm -f test/coverage/coverage-*.json",
@@ -36,9 +37,9 @@
     "version": "./assert_changelog_ready $npm_package_version"
   },
   "files": [
-    "lib"
+    "build"
   ],
-  "main": "lib/convict.js",
+  "main": "build/convict.js",
   "dependencies": {
     "depd": "1.1.2",
     "json5": "1.0.1",
@@ -48,6 +49,13 @@
     "yargs-parser": "10.1.0"
   },
   "devDependencies": {
+    "@babel/cli": "7.0.0-beta.49",
+    "@babel/core": "7.0.0-beta.49",
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.49",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.49",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.49",
+    "@babel/preset-env": "7.0.0-beta.49",
+    "babel-core": "7.0.0-bridge.0",
     "coveralls": "3.0.2",
     "eslint": "4.19.1",
     "istanbul": "0.4.5",
