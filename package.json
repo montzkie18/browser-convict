@@ -1,6 +1,6 @@
 {
   "author": "Lloyd Hilaiel <lloyd@hilaiel.com> (http://lloyd.io)",
-  "name": "@montzkie18/convict",
+  "name": "browser-convict",
   "description": "Featureful configuration management library for Node.js (nested structure, schema validation, etc.)",
   "keywords": [
     "configuration",
@@ -10,7 +10,7 @@
     "nested",
     "validation"
   ],
-  "version": "4.3.2",
+  "version": "4.3.3",
   "license": "Apache-2.0",
   "homepage": "https://github.com/mozilla/node-convict",
   "repository": {
@@ -45,8 +45,7 @@
     "json5": "1.0.1",
     "lodash.clonedeep": "4.5.0",
     "moment": "2.22.2",
-    "validator": "10.4.0",
-    "yargs-parser": "10.1.0"
+    "validator": "10.4.0"
   },
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.49",
